@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field #type: ignore
 
 #schema que recibo al CREAR una tarea
 class TaskCreate(BaseModel):
@@ -12,3 +12,6 @@ class Task(BaseModel):
     id: int
     name: str
     description: str | None
+
+    class Config:
+        orm_mode: True
