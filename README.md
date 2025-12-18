@@ -1,9 +1,19 @@
-main.py → arranca la aplicación y conecta los routers
+# Task Manager API
 
-routers/ → las rutas (endpoints)
+Backend API para gestión de tareas construido con FastAPI.
 
-models/ → modelos de base de datos (SQLAlchemy)
+## Features
+- Crear tareas
+- Listar tareas
+- Actualizar tareas
+- Eliminar tareas
 
-schemas/ → modelos Pydantic (validación)
+## Tech Stack
+- FastAPI
+- SQLAlchemy
+- PostgreSQL
+- Pytest
 
-database.py → conexión a PostgreSQL
+## Instalación
+```bash
+pip install -r requirements.txt
