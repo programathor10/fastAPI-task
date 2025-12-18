@@ -12,4 +12,3 @@ Base.metadata.create_all(bind = engine)
 @app.get("/")
 def root():
     return {"message": "API de Tasks funcionando"}
-
